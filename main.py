@@ -40,14 +40,6 @@ with open("3hfm.pdb") as f:
             if (line.__contains__("CA")):
                 formatedString = line[30:]
                 clean = formatedString[:25]
-               # print((clean.split()))
-                # print(clean.split()[0] + " , " + clean.split()[1])
-                ##
-                #                     x = clean.split()[0]
-                #                     y = clean.split()[1]
-                #                     z = clean.split()[2]
-                #                     list.append(np.array([x,y,z]))
-                # #
 
                 list.append(np.array([float(clean.split()[0]), float(clean.split()[1]), float(clean.split()[2])]))
 
